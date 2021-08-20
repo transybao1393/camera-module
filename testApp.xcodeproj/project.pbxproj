@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		0E7E2321268CCE97005ED624 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7E2320268CCE97005ED624 /* Preview Assets.xcassets */; };
 		0E7E232C268CCE97005ED624 /* testAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E232B268CCE97005ED624 /* testAppTests.swift */; };
 		0E7E2337268CCE97005ED624 /* testAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E2336268CCE97005ED624 /* testAppUITests.swift */; };
+		0E7E234F26917593005ED624 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E234E26917593005ED624 /* CameraView.swift */; };
+		0E7E23522691BB02005ED624 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 0E7E23512691BB02005ED624 /* AlertToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		0E7E2332268CCE97005ED624 /* testAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7E2336268CCE97005ED624 /* testAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAppUITests.swift; sourceTree = "<group>"; };
 		0E7E2338268CCE97005ED624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E7E234E26917593005ED624 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7E23522691BB02005ED624 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +101,7 @@
 			children = (
 				0E7E2319268CCE95005ED624 /* testAppApp.swift */,
 				0E7E231B268CCE95005ED624 /* ContentView.swift */,
+				0E7E234E26917593005ED624 /* CameraView.swift */,
 				0E7E231D268CCE97005ED624 /* Assets.xcassets */,
 				0E7E2322268CCE97005ED624 /* Info.plist */,
 				0E7E231F268CCE97005ED624 /* Preview Content */,
@@ -146,6 +151,9 @@
 			dependencies = (
 			);
 			name = testApp;
+			packageProductDependencies = (
+				0E7E23512691BB02005ED624 /* AlertToast */,
+			);
 			productName = testApp;
 			productReference = 0E7E2316268CCE95005ED624 /* testApp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 0E7E230D268CCE95005ED624;
+			packageReferences = (
+				0E7E23502691BB02005ED624 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 0E7E2317268CCE95005ED624 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7E234F26917593005ED624 /* CameraView.swift in Sources */,
 				0E7E231C268CCE95005ED624 /* ContentView.swift in Sources */,
 				0E7E231A268CCE95005ED624 /* testAppApp.swift in Sources */,
 			);
@@ -580,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E7E23502691BB02005ED624 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E7E23512691BB02005ED624 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E7E23502691BB02005ED624 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E7E230E268CCE95005ED624 /* Project object */;
 }
